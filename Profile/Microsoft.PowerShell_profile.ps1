@@ -1,4 +1,4 @@
-Set-Location "C:\Powershell"
+Set-Location "C:\git\Personal-Repo"
 Import-Module "C:\Powershell\Weather\Get-YahooWeather.ps1" 
 Clear-Host
 function Test-Administrator {
