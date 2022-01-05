@@ -1,4 +1,6 @@
-$headers=@{}
-$headers.Add("x-rapidapi-host", "us-restaurant-menus.p.rapidapi.com")
-$headers.Add("x-rapidapi-key", "a6300ececdmshac11395a84f2d7ap1a4185jsn8b8504cf8867")
-$response = Invoke-RestMethod -Uri 'https://us-restaurant-menus.p.rapidapi.com/restaurants/zip_code/63103?page=1' -Method GET -Headers $headers
+$WiFiLocation = "/Library/Preferences/SystemConfiguration"
+Remove-Item -Path $WiFiLocation/com.apple.airport.preferences.plist -Force
+Remove-Item -Path $WiFiLocation/com.apple.network.eapolclient.configuration.plist -force
+Remove-item -Path $WiFiLocation/com.apple.wifi.message-tracer.plist -force
+Remove-Item -Path $WiFiLocation/NetworkInterfaces.plist -force
+Remove-item -Path $WiFiLocation/preferences.plist -Force
